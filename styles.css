@@ -52,7 +52,41 @@ main{
 }
 
 .rotateCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
     background-color: #8DE969;
+    animation: rotate 3s ease-in ;
+    
+}
+
+.hoverBtnContainer{
+    display: flex;
+    gap:10px;
+}
+
+.btn{
+    padding: 10px;
+    width: 100px;
+    border-radius: 40px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    box-shadow: 2px 2px 5px lightgrey;
+
+}
+
+.btnColor{
+    transition: 5s ease-in;
+}
+
+.btnColor:hover{
+    background-color:#8DE969;
+   
 }
 
 @keyframes slideInLeft{
@@ -72,5 +106,26 @@ main{
 
     to{
         tranform: translateX(0)
+    }
+}
+
+@keyframes rotate {
+    0%{
+      
+       
+    }
+
+    50%{
+        scale:2;
+        transform: rotate(0)
+        border-radius: 0
+    }
+
+    100%{
+
+        border-radius: 100%;
+        transform: rotate(360deg);
+        scale: 2;
+ 
     }
 }

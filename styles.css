@@ -43,6 +43,7 @@ main{
 .slideInLeft{
     background-color: #120D31;
     color: whitesmoke;
+    animation: slideInLeft 1s ease-in;
 }
 
 .slideInRight{
@@ -51,4 +52,14 @@ main{
 
 .rotate{
     background-color: #8DE969;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
 }

@@ -37,9 +37,18 @@ main{
   border-color: lightgrey;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 2px 2px 7px lightgray;
+  box-shadow: 2px 2px 7px #d3d3d3;
 }
 
 .slideInLeft{
-    background-color: aquamarine;
+    background-color: #120D31;
+    color: whitesmoke;
+}
+
+.slideInRight{
+    background-color:#ACBEA3;
+}
+
+.rotate{
+    background-color: #8DE969;
 }

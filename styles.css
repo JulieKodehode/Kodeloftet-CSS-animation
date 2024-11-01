@@ -40,17 +40,18 @@ main{
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 
-.slideInLeft{
+.slideInLeftCard{
     background-color: #120D31;
     color: whitesmoke;
     animation: slideInLeft 1s ease-in;
 }
 
-.slideInRight{
+.slideInRightCard{
     background-color:#ACBEA3;
+    animation: slideInRight 1s ease-in
 }
 
-.rotate{
+.rotateCard{
     background-color: #8DE969;
 }
 
@@ -61,5 +62,15 @@ main{
 
     to{
         transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(300px)
+    }
+
+    to{
+        tranform: translateX(0)
     }
 }

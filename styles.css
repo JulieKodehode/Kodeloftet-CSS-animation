@@ -15,3 +15,31 @@ Transition
 - slide in tekst
 
 */
+
+body{
+    font-family:"Poppins", serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card{
+  max-width: 500px;
+  min-width: 300px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px lightgray;
+}
+
+.slideInLeft{
+    background-color: aquamarine;
+}

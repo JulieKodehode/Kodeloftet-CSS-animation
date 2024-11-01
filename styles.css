@@ -77,17 +77,31 @@ main{
     border-color: lightgrey;
     border-style: solid;
     box-shadow: 2px 2px 5px lightgrey;
+    transition: 300ms ease-in;
 
 }
 
-.btnColor{
-    transition: 5s ease-in;
-}
 
 .btnColor:hover{
     background-color:#8DE969;
-   
 }
+
+.btnSize:hover{
+     scale: 3;
+}
+
+.btnOpacity{
+    opacity: 0.3;
+    transition: opacity 300ms ease-in-out;
+}
+
+.btnOpacity:hover{
+ opacity: 1;
+}
+
+
+
+
 
 @keyframes slideInLeft{
     from{
@@ -117,8 +131,8 @@ main{
 
     50%{
         scale:2;
-        transform: rotate(0)
-        border-radius: 0
+        transform: rotate(0);
+        border-radius: 0;
     }
 
     100%{

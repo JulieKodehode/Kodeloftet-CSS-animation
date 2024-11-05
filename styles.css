@@ -16,11 +16,23 @@ Transition
 
 */
 
+
+/* GLOBAL CSS */
+
 :root{
     --cardFromRight: #ACBEA3;
     --cardFromLeft:  #120D31;
     --rotate: #8DE969;
 }
+
+.flexColCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Vanlig CSS */
 
 body{
     font-family:"Poppins", serif;
@@ -28,10 +40,6 @@ body{
 
 main{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
 }
 
@@ -58,10 +66,6 @@ main{
 }
 
 .rotateCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     width: 100px;
     height: 100px;

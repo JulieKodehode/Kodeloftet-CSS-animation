@@ -16,6 +16,12 @@ Transition
 
 */
 
+:root{
+    --cardFromRight: #ACBEA3;
+    --cardFromLeft:  #120D31;
+    --rotate: #8DE969;
+}
+
 body{
     font-family:"Poppins", serif;
 }
@@ -41,13 +47,13 @@ main{
 }
 
 .slideInLeftCard{
-    background-color: #120D31;
+    background-color: var(--cardFromLeft);
     color: whitesmoke;
     animation: slideInLeft 1s ease-in;
 }
 
 .slideInRightCard{
-    background-color:#ACBEA3;
+    background-color:var(--cardFromRight);
     animation: slideInRight 1s ease-in
 }
 
@@ -59,7 +65,7 @@ main{
     padding: 20px;
     width: 100px;
     height: 100px;
-    background-color: #8DE969;
+    background-color: var(--rotate);
     animation: rotate 3s ease-in ;
     
 }
